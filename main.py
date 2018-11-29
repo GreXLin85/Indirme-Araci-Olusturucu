@@ -6,7 +6,8 @@ print("Not: İndirilecek dosyaları sıkıştırılmış yani zip, rar gibi form
 baslik = input("Başlık: ")
 link = input("İndirilecek dosya (örn. ornek.com/ornek.zip): ")
 isim = input("İndirilen dosyanın ismi ve uzantısı (örn. ornek.zip): ")
-ia = open("ia.py", "w")
+indirmedosyaisim = input("İndirme aracı dosyasının adını giriniz: ") 
+ia = open(indirmedosyaisim+".py", "w")
 ia.write('''# -*- coding: utf-8 -*-
 import urllib.request
 import os
